@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+</head>
+
+<style>
+    .radius{
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        background: #006400;
+        border-top-left-radius: 100px 300px;
+        border-top-right-radius: 500px 200px ;
+        border-bottom-right-radius: 100px 500px;
+        border-bottom-left-radius: 200px 150px ;
+    }
+
+    .radiusDos {
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        background: #640a00;
+        border-radius: 20% 20px 40em 20rem ;
+    }
+
+    .radiusTres {
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        background: #640a00;
+        border-radius: 50%  20% 60px 30em / 30px 60em 100rem 100% ;
+    }
+</style>
+
+<body>
+    <div class="radius"></div>
+    <div class="radiusDos"></div>
+    <div class="radiusTres"></div>
+    
+
+</body>
+</html>

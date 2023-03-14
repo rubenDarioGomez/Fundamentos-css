@@ -1,0 +1,33 @@
+li {
+    font-family: sans-serif;
+}
+
+#frutas :first-child {
+    color: green;
+    font-size: 30px;
+}
+
+#frutas :last-child {
+    color: firebrick;
+    font-size: 25px;
+}
+
+#nombres {
+    background-color: rgb(211, 255, 245);
+    padding: 20px;
+    border: 2px dashed rgb(172, 24, 24);
+    list-style: none;
+}
+ 
+#nombres li:nth-child(odd) {
+    Color: dodgerblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#nombres li:nth-child(even) {
+    Color: darkorange;
+    font-family: italic;
+    font-size: 30px;
+    text-decoration: underline;
+}

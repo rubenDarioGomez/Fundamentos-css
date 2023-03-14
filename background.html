@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        background: #abc123;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 20px dashed darkblue;
+
+    }
+
+    nav {
+        background-color: #000aa0;
+        height: 80px;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        width: 090%;
+        margin: 0 aut0;
+
+
+
+    }
+
+    nav input {
+        width: 44%;
+        margin: 2%;
+        height: 20%;
+
+    }
+
+    section {
+        height: 500px;
+        margin: 2em;
+    }
+
+    section:hover {
+        border: rgb(193, 14, 14) 30px;
+        border-style: double;
+        width: 100%
+    }
+
+    .uno {
+        width: 50%;
+        background-image: url(../html/img/Logotipo.png), url(/CursosIndependientes/Cusros\ de\ udemy/css/img/paisaje.jfif);
+        background-repeat: no-repeat, repeat;
+        overflow: auto;
+        background-position: center bottom;
+        background-attachment: fixed;
+        /* background-size: 500px, 100px; */
+        background-color: #ccc;
+        background-clip: content-box, padding-box;
+        margin-top: 200px;
+        box-shadow: 10px 10px #006400;
+
+    }
+
+    .dos {
+        width: 100%;
+    }
+    /* .dos img {
+        -webkit-filter: drop-shadow(100px 100px #006400);
+    } */
+
+    .tres {
+        background: url(../html/img/Logotipo.png) no-repeat bottom right / 100%, url(/CursosIndependientes/Cusros\ de\ udemy/css/img/paisaje.jfif) no-repeat center / cover fixed;
+        background-origin: padding-box, content-box;
+        border: 10px dashed #006400;
+        width: 50%;
+        /* -webkit-filter: sepia(.9) saturate(.9); */
+    }
+
+    .cuatro {
+        background: url(img/paisaje.jfif) center / cover fixed;
+        border: 10px dashed rgb(242, 255, 242);
+        background-origin: 200px;
+        width: 100%;
+        overflow: auto;
+        /* -webkit-filter: blur(5px) grayscale(.5) contrast(1) brightness(3) hue-rotate(100deg) invert(.1) opacity(.5); */
+    }
+    .cinco {
+        width: 100%;
+        background: rgb(14, 77, 66) url(img/paisaje.jfif) no-repeat center / cover;
+        background-blend-mode:color-dodge ;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <input type="text" placeholder="items 1"></input>
+        <input type="text" placeholder="items 2"></input>
+        <input type="text" placeholder="items 3"></input>
+        <input type="text" placeholder="items 4"></input>
+    </nav>
+
+    <section class="uno">
+    </section>
+    <section class="dos">
+        <img src="img/Logotipo.png" alt="">
+
+    </section>
+    <section class="tres">
+
+    </section>
+    <section class="cuatro"></section>
+    <section class="cinco">
+        <!-- <img src="img/paisaje.jfif" alt=""> -->
+    </section>
+
+
+</body>
+
+</html>

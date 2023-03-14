@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    body {
+        background-color: #ccc1cc;
+    }
+
+    #countainer div {
+        width: 100px;
+        height: 100px;
+        background-color: #fff00f;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    #countainer {
+        height: 200px;
+        display: flex; /*permite colocar los elementos hijos en una fila*/
+        /*flex-direction: row-reverse; /* colocar los elementos hijos desde el lugar deseado en columna o filas*/
+        /*flex-wrap: wrap; /*define si los hijos saltan de fila o no*/
+        flex-flow: row nowrap; /* shorthand para definir filas o columnasy si salta de fila o no*/
+        /*justify-content:first baseline; /*permite definir la ubicacion de los contenedore*/
+        align-items:flex-start;
+        margin: 0;
+    }
+
+    article div {
+        width: 100px;
+        height: 100px;
+        background-color: #fff00f;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .contenedor {
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .uno {
+        order: 4; /* permite ubicar un elemento en un posicion*/
+        flex-grow: 1; /*agrega un ancho en porcetaje dependiendo del valor que se le agregue*/
+        flex-shrink: 0; /*dertermina el porcentade del ancho para cuanddo se redusca la ventana de navegacion*/
+        flex-basis: 200px; /*determina el ancho cuando estan en fila o alto en columna minimo de un elemento*/
+    }
+
+    .dos {
+        order: 3;
+        flex-grow: 2;
+        flex-shrink: 0;
+        align-self: flex-end; /*permite ubicar un contenedor independientemente del resto*/
+
+    }
+
+
+    .tres {
+        order: 2;
+        flex-grow: 3;
+        flex-shrink: 1;
+    }
+
+    .cuatro {
+        order: -1; /*-1 es la primera posicion*/
+        flex: 1 1 100px; /*shorthand para el flex-grow, flex-shrink y flex-basis*/
+    }
+
+</style>
+
+<body>
+
+    <article id="countainer">
+        <div class="con1"><h2>1</h2></div>
+        <div class="con2"><h2>2</h2></div>
+        <div class="con3"><h2>3</h2></div>
+        <div class="con4"><h2>4</h2></div>
+        <div class="con5"><h2>5</h2></div>
+        <div class="con6"><h2>6</h2></div>
+        <div class="con7"><h2>7</h2></div>
+        <div class="con8"><h2>8</h2></div>
+    </article>
+
+    <article class="contenedor">
+        <div class="uno"><h2>1</h2></div>
+        <div class="dos"><h2>2</h2></div>
+        <div class="tres"><h2>3</h2></div>
+        <div class="cuatro"><h2>4</h2></div>
+    </article>
+    
+</body>
+</html>

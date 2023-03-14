@@ -1,0 +1,625 @@
+body {
+    background: #c5bc3c;
+    margin: 0 auto;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Con # elegimos una etiqueta con su Id */
+
+#encabezado {
+    height: 100px;
+    background-color: burlywood;
+}
+
+#seccion {
+    height: 400px;
+    background: green;
+}
+
+/* Con . elegimos una etiqueta con su class */
+
+.navegador {
+    text-align: end;
+    background-color: #5cb85c;
+    color: #fff000;
+}
+
+/* Con > elegimos una etiqueta denrtro de otra etiqueta */
+
+
+
+.encabezado>h1 {
+    color: rgb(7, 58, 96);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+p>span {
+    color: rgb(194, 14, 14);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: blue;
+}
+
+/* Con + elegimos la etiqueta contigua */
+
+h2+article {
+    color: rgb(224, 236, 224);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
+
+/* Con ~ elegimos la etiquetas contiguas con la misma jerarquia */
+
+nav~footer {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* selector de atributo */
+
+h1[title] {
+    background-color: rgb(23, 23, 134);
+    color: darkgoldenrod;
+    font-family: cursive;
+}
+
+/* selector de atributo y valor del atributo */
+
+h1[title="etiqueta1"] {
+    font-size: 50px;
+    background-color: #5cb85c;
+    color: rgb(147, 210, 160);
+}
+
+h1[title="etiqueta1 copia"] {
+    font-size: 70px;
+    background-color: #033b03;
+    color: rgb(147, 210, 160);
+}
+
+
+
+/* Con ~ seleccionamos el valor del atributo con un espacio en blanco */
+
+[data-parrafo~="parrafo"] {
+
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+[data-parrafo~="parrafoTexto"] {
+
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #033b03;
+}
+
+
+/* Con | seleccionamos el valor del atributo con un seguido de un guion */
+
+[data-parrafo|="parrafo"] {
+    background-color: #000;
+    color: antiquewhite;
+    font-size: 40px;
+    text-align: end;
+}
+
+
+/* con ^ seleccionavos el valor de atributo que comineze en ab  */
+
+h4[title^=ab] {
+    background-color: #fff000;
+    font-size: 20px;
+    text-align: end;
+
+}
+
+/* con $ seleccionavos el valor de atributo que termine en b2 */
+
+
+h4[title$=b2] {
+    background-color: #c5bc3c;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* con * seleccionavos el valor de atributo que contenga anexo */
+
+
+h4[title*=anexo] {
+    background-color: #632f2f;
+    font-size: 40px;
+    text-align: start;
+    color: #ccc;
+}
+
+/* selectores de pseudoclases primer hijo*/
+
+.seccion2 h6:first-child {
+    height: 20%;
+    background-color: chartreuse;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seccion2 {
+    height: 50%;
+    width: 20%;
+    border: 2px solid #006400;
+
+}
+
+/* selectores de pseudoclases ultimo hijo*/
+
+.seccion2 h6:last-child {
+    height: 20%;
+    background-color: chartreuse;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p span :only-child {
+    background-color: #000;
+    height: 20%;
+    border: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* a:lang(en) {}  selectod de seudoclase de idiomas*/
+a:lang(en) {
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 5px;
+    border: 5px solid #3c3b25;
+
+}
+
+.enlaces {
+    margin: 5px auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #b6ab0d;
+    padding: 5px;
+
+}
+
+/* toma el estilo si el link esta sin visitar */
+
+a:link {
+    background-color: #000;
+}
+
+/* toma el estilo si el link fue visitado */
+
+a:visited {
+    border: 2px groove #a6a053;
+    background-color: #0ceb0c;
+    color: white;
+}
+
+/* toma el estilo al dar click en el enlace */
+
+a:active {
+    border: 2px groove #2b2b29;
+    background-color: #eb220c;
+    color: rgb(75, 47, 187);
+}
+
+/* cambia de estilo al colocar el mosue sobre un elemento */
+
+ header:hover,
+a:hover,
+nav:hover,
+section:hover,
+footer:hover,
+li:hover,
+div:hover,
+table:hover,
+h1:hover,
+h2:hover {
+    padding: 5px;
+    border: 5px solid #e4e4dc;
+    color: #ccc;
+    background-color: #fff000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+} 
+
+/* se activa el focus al haver click sobre la etiqueta */
+
+input:focus {
+    padding: 5%;
+    background-color: #000;
+    color: #e4e4dc;
+}
+
+/* propiedad ntd child nos permite elegir pares e impares   */
+
+.tabla table {
+    margin: 1% auto;
+    border: 1px solid rgb(155, 8, 8);
+}
+
+/* table {
+    border-collapse: collapse;
+    border-spacing: 10px;
+    margin: 30px auto;
+
+} */
+
+caption {
+    font-size: 30px;
+}
+
+
+th,
+td {
+    padding: 10px 15px;
+    border-right: black 1px solid;
+    border-bottom: #ec3565 1px solid;
+}
+
+
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+
+}
+
+/* odd para los impares  */
+
+tbody tr:nth-child(odd) {
+    background-color: #006400;
+    color: #fff;
+}
+
+/* even para los pares  */
+
+
+tbody tr:nth-child(even) {
+    background-color: #4a2181;
+    color: #fff;
+}
+
+tbody tr:nth-last-child(1) {
+    background-color: #90b01b;
+    color: #fff;
+}
+
+tbody tr:first-child {
+    background-color: #90b01b;
+    color: #fff;
+}
+
+/* pseudo clase of-type para seleccionar etiquetas html del mismo tipo  */
+
+.type * {
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid #006400;
+}
+
+.type li:first-of-type {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.type li:last-of-type {
+    background-color: #751ee0;
+    color: #fff;
+}
+
+.type div:nth-of-type(odd) {
+    background-color: #087208;
+}
+
+.type div:nth-of-type(even) {
+    background-color: #310962;
+}
+
+.type :only-of-type {
+    background-color: #2b2b29;
+    color: white;
+}
+
+/* :root ns permite modificar el documento de manera general -----------------  */
+
+/* :root {
+    background-color: #ccc;
+    width: 100%;
+} */
+
+/* :empty selecciona etiquetas vacias  */
+
+:empty {
+    border: 2px groove firebrick;
+    background-color: #0ceb0c;
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    height: 50px;
+}
+
+/* :not no aplica los estilos a las etiquetas seleccionadas entre los parentesis */
+
+/* :not(section, p) {
+    width: 70%;
+    background-color: #3c3b25;
+    margin: 0 auto;
+} */
+
+.formulario {
+    background-color: #ccc;
+    border: 1px solid;
+    margin: 10px auto;
+}
+
+
+/* disabled aplica estilo a los input desabilitrados  */
+:disabled {
+    background-color: #310962;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    margin: 1em auto;
+    cursor: no-drop;
+}
+
+/* enabled aplica estilo a los input habilitados  */
+
+
+:enabled {
+    background-color: #90b01b;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    margin: 1em auto;
+}
+
+/* aplica estilos a los enlaces internos cuando se les da click */
+
+:target {
+    background-color: #ccc;
+    font-size: 30px;
+    width: 50%;
+    color: #000;
+}
+
+/* first-letter permite darle estilo a la primera letra de un texto  */
+
+#titulo::first-letter {
+    color: white;
+    font-size: 40px;
+    background-color: brown;
+    padding: 4px 10px;
+    border-radius: 50%;
+}
+
+/* ::first-line se utiliza para dar estilo a la primera linea de un parrafo  */
+
+.contenido::first-line {
+    background-color: #ccc;
+    color: #000;
+    font-size: 30px;
+}
+
+.contenido {
+    Padding: 20px;
+    background-color: forestgreen;
+    Color: white;
+    font-size: 20px;
+}
+
+/* after añade contenido despues del texto del documento  */
+
+#titulo::after {
+    content: ' pseudoclase after';
+    color: #fff;
+    background-color: #fff000;
+}
+
+/* before añade contenido antes del texto del documento  */
+
+
+#titulo::before {
+    content: ' pseudoclase before';
+    color: #fff;
+    background-color: #006400;
+}
+
+/* ::selection nos permite agregar estilos a los textos que seleccionemos con em mouse  */
+
+::selection {
+    background-color: tomato;
+    color: #fff;
+}
+
+p::selection {
+    background-color: cornflowerblue;
+    color: #000;
+    font-size: 30px;
+}
+
+.contenido {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/* ::-webkit-scrollbar pérmite dar estilo a la barra de desplazamineto  */
+
+::-webkit-scrollbar-track {
+    background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gold;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #49060c;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #11c02b5a;
+}
+
+.fuentes {
+    margin: 30px;
+}
+
+.p1 {
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    word-spacing: 22px;
+    text-decoration: underline;
+    text-align-last: right;
+    word-wrap: break-word;
+}
+
+.p2 {
+    text-indent: 30px;
+    padding: 30px;
+    text-transform: uppercase;
+    font: italic bold small-caps 20px helvetica, sans-serif;
+    letter-spacing: 10px;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+    text-shadow: 5px 5px 5px red;
+}
+
+.p3 {
+    font: 20px monospace;
+    text-indent: 30px;
+    text-transform: lowercase;
+    white-space: nowrap;
+    text-align: justify;
+    text-decoration: line-through;
+    text-decoration-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lista {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.lista ol,
+ul {
+    list-style-type: armenian;
+    margin: 0 auto;
+    list-style-position: outside;
+    width: 100%;
+}
+
+.lista li {
+    border: 1px solid blue;
+    padding: 5px;
+
+}
+
+.lista ol li:nth-child(2n) {
+    list-style-image: url(../html/img/Logotipo.png);
+    list-style-position: outside;
+    list-style: decimal-leading-zero inside;
+}
+
+.box {
+    width: 90%;
+    height: auto;
+    margin: 2em 2em;
+    border: 2px dashed #033b03;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.con {
+    width: 20%;
+    height: 100px;
+    background-color: #0ceb0c;
+    display: flex;
+    justify-content: center;
+    /* padding: 60px; */
+    float: left;
+    align-items: center;
+    box-sizing: padding-box;
+    border: 2px dashed red;
+    margin: 0 auto;
+}
+
+.hbox {
+    background-color: #8e0c0c;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.table {
+    display: table;
+    border: 1px dashed #fff;
+}
+
+.caption {
+    display: table-caption;
+    text-align: center;
+    border: 2px solid#000;
+}
+.thead {
+    display: table-header-group;
+}
+
+
+
+.row {
+    display: table-row;
+}
+
+p {
+    display: table-cell;
+    padding: 20px;
+    border: 1px groove;
+}
+
+/* p {
+    display: none;
+    padding: 20px;
+    border: 1px groove;
+} */

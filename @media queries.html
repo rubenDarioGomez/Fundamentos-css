@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media quieris</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+        background-color: #006300;
+    }
+
+    .titulo {
+        margin: 50px 0 0;
+        width: 100%;
+        color: #ccc;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100%;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .tituloDos {
+        margin: 0 auto;
+        width: 100%;
+        color: #ccc;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100%;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #contenido {
+        width:100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .article img{
+        width: 100%;
+        
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .article {
+        width: 30%;
+        background-color: #ccc;
+        padding: 10px;
+        margin: 10px ;
+        box-sizing: padding-box;
+    }
+
+    @media (min-width:400px) and (max-width:700px){  /*determina el ancho de la pantalla y luego se dan las propiedades a los elementos, el operador logoco or se representa con la coma */
+        body {
+            background-color: blue;
+        }
+
+        .article {
+        width: 100%; 
+
+        }
+
+    }
+</style>
+
+<body>
+    <div id="contenido">
+        <div class="titulo">
+            <h2>media queris</h2>
+        </div>
+
+        <div class="tituloDos">
+            <h3> orientacion:</h3>
+        </div>
+
+        <article class="article">
+            <h1>Lorem, ipsum dolor.</h1>
+            <img src="img/paisaje.jfif" alt="" class="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde, voluptatibus odit optio ad cum.
+                Delectus
+                repudiandae fuga laborum veniam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus quas libero. Iusto, deserunt
+                quasi eum incidunt rem odio ratione.</p>
+            </img>
+            </h1>
+        </article>
+
+        <article class="article">
+            <h1>Lorem, ipsum dolor.</h1>
+            <img src="img/paisaje.jfif" alt="" class="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde, voluptatibus odit optio ad cum.
+                Delectus
+                repudiandae fuga laborum veniam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus quas libero. Iusto, deserunt
+                quasi eum incidunt rem odio ratione.</p>
+            </img>
+            </h1>
+        </article>
+
+        <article class="article">
+            <h1>Lorem, ipsum dolor.</h1>
+            <img src="img/paisaje.jfif" alt="" class="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde, voluptatibus odit optio ad cum.
+                Delectus
+                repudiandae fuga laborum veniam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus quas libero. Iusto, deserunt
+                quasi eum incidunt rem odio ratione.</p>
+            </img>
+            </h1>
+        </article>
+    </div>
+
+</body>
+
+</html>

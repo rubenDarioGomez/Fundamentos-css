@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@keyframaes</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: brown;
+    }
+
+    .circulo {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 100px auto;
+        animation-name: identificador;
+        /*nombre para identificar la animacion*/
+        animation-duration: 2s;
+        /*tiempo que dura la animacion para completar su ciclo en segundos*/
+        animation-timing-function: ease-in-out;
+        /*Indica el ritmo de la animacion */
+        animation-delay: 3s;
+        /*tiempo que espera para ejecutar la animacion*/
+        animation-iteration-count: 1;
+        /*determina cuantas veces dura la animacion*/
+        animation-direction: alternate;
+        /*indica el que parte del ciclo comienza la animacion, principo, mitad o fin*/
+        animation-fill-mode: backwards;
+        /*determina si el elemento queda en su forma original o el final de la animacion*/
+    }
+
+    .circuloDos {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 100px auto;
+        animation: idenficadorDos 3s ease-in 3s infinite normal forwards;
+        /*shorthand de las animaciones en el orden de .circulo*/
+        position: absolute;
+    }
+
+    /*aqui se confugura la ainimacion ira la animacion*/
+    @keyframes identificador {
+        from {
+            background-color: black;
+            border-radius: 0;
+        }
+
+        to {
+            background-color: darkgrey;
+
+        }
+
+    }
+
+    /*aqui se confugura la ainimacion ira la animacion*/
+
+    @keyframes idenficadorDos {
+        0% {
+            background-color: yellow;
+            border-radius: 0;
+            border: dashed;
+        }
+
+        25% {
+            border: 10x groove wheat;
+            background-color: black;
+        }
+
+        50% {
+            top: 50%;
+            left: 50%;
+            border-radius: 20% 20%;
+        }
+
+        75% {
+            left: 50%;
+            border: 3px double greenyellow;
+            background-color: #ccc;
+        }
+
+        100% {
+            background-color: violet;
+            top: 0%;
+            left: 0;
+
+        }
+
+    }
+
+    #play-state {
+        padding: 5px;
+        margin: 0 auto;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+
+    .play {
+        animation-play-state: running;
+        /*determina si la animacion se ejecuta o se pausa*/
+    }
+
+    .pause {
+        animation-play-state: paused;
+    }
+</style>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script>
+        $(function () {
+
+            var contador = 1;
+            var circulo = $('.circuloDos')
+
+            $('#play-state').click(function () 
+            {
+            if (contador == 1) {
+                circulo.addClass('pause');
+                circulo.removeClass('play');
+                contador = 0;
+            } else {
+                contador = 1
+                circulo.addClass('play');
+                circulo.removeClass('pause');
+            };
+        });
+        $()
+        });
+    </script>
+
+    <div class="circulo"></div>
+    <div class="circuloDos"></div>
+    <button id="play-state">PLAY / PAUSE</button>
+</body>
+
+</html>

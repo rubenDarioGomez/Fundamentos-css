@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@font-face</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        background-color: brown;
+    }
+
+    @font-face {
+        font-family: "alex";
+        src: url(font/alex-brush/AlexBrush-Regular.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'kaushan_scriptregular';
+        src: url('font/kaushanscript-regular-webfont.woff2') format('woff2'),
+            url('font/kaushanscript-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    article {
+        width: 80%;
+        margin: 100px auto;
+        border: 3px double red;
+        background-color: #ccc;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "alex";
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        font-family: 'kaushan_scriptregular';
+        font-size: 20px;
+    }
+
+    @font-face {
+        font-family: 'icomoon';
+        src: url('icon/fonts/icomoon.eot?drkjie');
+        src: url('icon/fonts/icomoon.eot?drkjie#iefix') format('embedded-opentype'),
+            url('icon/fonts/icomoon.ttf?drkjie') format('truetype'),
+            url('icon/fonts/icomoon.woff?drkjie') format('woff'),
+            url('icon/fonts/icomoon.svg?drkjie#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+
+    .icon-home:before,
+    .icon-camera:before,
+    .icon-rocket:before
+    {
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+
+
+    .icon-home:before {
+        content: "\e900";
+    }
+
+    .icon-camera:before {
+        content: "\e90f";
+    }
+
+    .icon-rocket:before {
+        content: "\e9a5";
+    }
+</style>
+
+<body>
+    <article class="icon.rocket">
+        <h1 class=".icon-camera">Lorem ipsum dolor sit.</h1>
+        <img src="img/paisaje.jfif" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dignissimos similique quaerat quasi laborum?
+            Molestias, consequatur rem! Sequi optio aspernatur, delectus quisquam dolorem doloremque. Optio, maxime
+            dolorem nemo aperiam doloribus ipsa delectus deleniti magni tenetur repellendus recusandae numquam
+            perferendis modi, possimus quasi veniam autem et ipsam dolores illum! Unde, veritatis.</p>
+    </article>
+</body>
+
+</html>

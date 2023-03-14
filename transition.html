@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+
+<style>
+    body {
+        background-color: brown;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        margin:50px auto;
+
+        /* determina que propiedades aplicara la transicion */
+        /* transition-property: background-color, width, heigth;  */
+
+        /* determina qla velocidad de la transicion */
+        /* transition-timing-function: steps(10, end);  */  /* otra propiedad que permite colocar otras velocidades de transicion son: ease, linear, ease-in, ease-out, ease-in-out, steps */
+        /* transition-duration: 1s, 1s, 1s;  */
+        /* transition-timing-function: cubic-bezier(.99,.15,.38,1); */
+
+         /*tiempo de demora entre transiciones*/
+        /* transition-delay: 2s, 2s, 2s; */
+
+        /*shorthand para las tracisones en el orden propiedad duracion timing.function y delay se separa por comas cada propiedad */ 
+        /* transition: background-color 1s ease-in 2s,
+        width 1s steps(3, end) 2s,
+        heigth 1s ease-in-out 2s; */
+
+        /*transition all selecciona todas las propiedades tiempo, timing y delay*/
+        transition: all 3s steps(3, start) 1s;
+    }
+
+    div:hover {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>
