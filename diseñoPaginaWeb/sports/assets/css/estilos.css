@@ -1,0 +1,61 @@
+/**
+ * Estilos predefinidos
+ */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.c1 {
+    color: #02c6ee;
+}
+
+h1, h2, h3, h4, h5, h6,
+span, p, strong, a, label {
+    font-family: sans-serif;
+}
+
+/**
+ * Estilos de Navegación top
+ */
+
+#navegacion-top {
+    background-color: #030303;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+}
+
+#navegacion-top .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#logo img {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+
+}
+
+nav ul li a {
+    color: #02c6ee;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 28px;
+}
+

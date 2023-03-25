@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,12 @@
 <style>
     body {
         background-color: #ccc;
-        perspective: 800px; /*crea el entorno en  3D determina la distancia del plano z entre cero y el valor determinado*/
-        /*perspective-origin: 50% 1000px; determina la posicion del usuario que esta mirando, su valor por defecto es center center*/
+        perspective: 800px;
+        /*crea el entorno en  3D determina la distancia del plano z entre cero y el valor determinado*/
+        /* perspective-origin: 100% 1000px; */
+        /* determina la posicion del usuario que esta mirando, su valor por defecto es center center */
     }
+
     .contenedor {
         width: 250px;
         height: 250px;
@@ -20,17 +24,21 @@
         position: relative;
         transition: all 1s ease;
         border: 5px groove blue;
-        border-style:dashed;
-        transform-style: preserve-3d; /*permite eredar las propiedades 3D a los hijos*/
+        border-style: dashed;
+        transform-style: preserve-3d;
+        /*permite eredar las propiedades 3D a los hijos*/
     }
 
-    .contenedor div > img {
+    .contenedor div>img {
         width: 100%;
-    } 
+    }
 
-    .front, .back {
-        position: absolute; /*de esta manera se coloca una imagen detras de la otra*/
-        backface-visibility: hidden; /*oculata la cara de atras del elemento*/
+    .front,
+    .back {
+        position: absolute;
+        /*de esta manera se coloca una imagen detras de la otra*/
+        backface-visibility: hidden;
+        /*oculata la cara de atras del elemento*/
     }
 
     .front {
@@ -38,15 +46,17 @@
     }
 
     .contenedor:hover {
-          transform: rotatey(180deg); /*rotacion vertical */
+        transform: rotatey(180deg);
+        /*rotacion vertical
          /* transform: rotatex(50deg); rotacion horizontal */
-          /* transform: rotatez(50deg); rotacion frontal */
-           /* transform: translatez(-200px); traslada de manera frontal */
-           /* transform: rotate3d(1,0,1,80deg); primer valor es x segundo y tercer z el ultimo valor los grados para aplicar. el uno lo aplica el cero no lo aplica */
-           /* transform: translate3d(50px, -50px, 100px); acepta los valores en los tres ejes x, y, z */
-           /* transform: rotatex(45deg); */
-           /*transform: scalez(-2) translatez(200px); scale mueve e elemento hacia el frente con valores positivos y hacia atras con valores negativos*/
-           /*transform: scale3d(2,2,2) translatez(200px); scale 3Dmueve recibe los valores de x, y, z y los multiplica por el valor de traslate*/
+        /* transform: rotatez(50deg); rotacion frontal */
+        /* transform: translatez(-200px); */
+        /*traslada de manera frontal */
+        /* transform: rotate3d(1,0,1,80deg); primer valor es x, segundo y, tercer z el ultimo valor los grados para aplicar. el uno lo aplica el cero no lo aplica */
+        /* transform: translate3d(50px, -50px, 100px); acepta los valores en los tres ejes x, y, z */
+        /* transform: rotatex(45deg); */
+        /*transform: scalez(-2) translatez(200px); scale mueve e elemento hacia el frente con valores positivos y hacia atras con valores negativos*/
+        /*transform: scale3d(2,2,2) translatez(200px); scale 3Dmueve recibe los valores de x, y, z y los multiplica por el valor de traslate*/
 
 
     }
@@ -54,7 +64,7 @@
 
 <body>
     <div class="contenedor">
-    
+
         <div class="back">
             <img src="img/1000-euros-back.png" alt="">
         </div>
@@ -65,4 +75,5 @@
 
     </div>
 </body>
+
 </html>

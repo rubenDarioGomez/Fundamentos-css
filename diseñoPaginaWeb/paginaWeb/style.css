@@ -1,0 +1,325 @@
+/*
+estilos predefinidos
+*/
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.c1 {
+    color: #05adeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+strong,
+a,
+label {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.iluminacion {
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+
+.btn {
+    background-color: white;
+    border: 0;
+    padding: 10px 25px;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    color: #05adeb;
+    font-weight: bold;
+}
+
+.iluminacion span {
+    position: absolute;
+    font-size: 150px;
+    -webkit-text-stroke: 3px white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.iluminacion :last-child {
+    filter: blur(6px);
+}
+
+.textCenter {
+    text-align: center;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+ }
+
+ .col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 10%;
+}
+
+
+
+/*
+Estilos navegacion-top
+*/
+
+#navegacionTop {
+    background-color: #020202;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+#navegacionTop .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#logo img {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav {
+    height: 100%;
+}
+
+
+nav ul li a {
+    padding: 0 20px;
+    color: #05adeb;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 28px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #020202;
+    background-color: #05adeb;
+    font-weight: bold;
+}
+
+/*Estilos del header*/
+
+header {
+    height: 600px;
+    background: url(img/bg-header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+.info-header {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-header p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 70px 996;
+}
+
+/*
+section who
+*/
+
+#who {
+    background-color: black;
+    padding: 90px 0;
+}
+
+#who p {
+    line-height: 28px;
+}
+
+/*
+section web
+*/
+
+.web {
+padding: 90px;
+color: white;
+background-color: #141414;
+}
+
+/*
+section priorities
+*/
+
+#priorities {
+    background: url(img/bg-priorities.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 700px;
+}
+
+.cajaPriori {
+    background-color: rgba(39, 39, 39, 0.62);
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cajaPriori h5 {
+    text-transform: uppercase;
+}
+
+/*
+seccion what
+*/
+
+#what {
+    background-color: #000;
+}
+
+.cajaWhat {
+    color: white;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mensajes{
+    background-color: #141414;
+    padding: 90px 0;
+    font-size: 20px;
+}
