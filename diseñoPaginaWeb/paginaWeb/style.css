@@ -33,6 +33,8 @@ strong,
 a,
 label {
     font-family: sans-serif;
+    text-transform: uppercase;
+
 }
 
 h1,
@@ -88,6 +90,14 @@ ul {
     text-align: center;
 }
 
+.textRigth {
+    text-align: right;
+}
+
+.textLeft {
+    text-align: left;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -125,7 +135,7 @@ ul {
 
 .col-4 {
     flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    max-width: 33.333333%;  
 }
 
 .col-5 {
@@ -167,6 +177,22 @@ ul {
 .col-12 {
     flex: 0 0 100%;
     max-width: 10%;
+}
+
+.offset-8{
+    margin-left: 66.666667%;
+}
+
+.offset-9{
+    margin-left: 75%;
+}
+
+.m0{
+    margin: 0 !important;
+}
+
+pd0{
+    padding: 0 !important;
 }
 
 
@@ -318,8 +344,97 @@ seccion what
     align-items: center;
 }
 
-#mensajes{
+.mensajes{
     background-color: #141414;
     padding: 90px 0;
     font-size: 20px;
 }
+
+.mensajes p{
+    font-size: 20px;
+}
+
+#nature{
+    background-color: #000;
+}
+
+#nature img{
+    width: 100%;
+    display: blockf;
+}
+
+.info-nature{
+    padding-left: 160px;
+    padding-right: 40px;
+    padding-top: 90px;
+}
+
+.info-nature p{
+    text-align: justify;
+    line-height: 24px;
+}
+
+.info-nature h2{
+   font-size: 40px;
+}
+
+#ticket{
+    background: url(img/bg-buy.jpg);
+    height: 650px;
+    background-size: cover;
+}
+
+.info-ticket{
+    color: white;
+    padding-top: 70px;
+}
+
+
+.info-ticket h2{
+    font-size: 50px;
+}
+
+#fecha {
+    background-color: #141414;
+    color: white;
+    padding: 90px 0;
+    font-size: 20px;
+    line-height: 20px;  
+}
+
+footer{
+    background-color: #141414;
+    color: white;
+}
+
+.redes ul li a{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.redes ul li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+
+.padre li {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+li span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
